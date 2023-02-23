@@ -1,0 +1,30 @@
+#spring:
+#  mail:
+#    host: smtp.163.com
+#    username: jakarter@163.com
+#    password: BARKRHBLEWBEFAOU
+#    default-encoding: UTF-8
+#    properties.mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
+#    properties.mail.debug: true
+
+
+
+spring:
+  mail:
+    host: smtp.163.com
+    username: jakarter@163.com
+    password: BARKRHBLEWBEFAOU
+    properties:
+      mail:
+        smtp:
+          timeout: 10000
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+            fallback: false
+
+
